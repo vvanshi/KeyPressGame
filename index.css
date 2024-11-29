@@ -13,9 +13,10 @@ a{
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+  width: 100%;
+  align-items: center; /* Centers vertically */
+  background-image: url("background.jpg");
+  background-size: cover;
 }
 
 header {
@@ -55,6 +56,15 @@ header {
 }
 
 .dog {
+    position: absolute;
+    top: -98px;
+    left: -3px;
+    width: 95px;
+    height: 150px;
+    pointer-events: none;
+}
+
+.ele{
     position: absolute;
     top: -98px;
     left: -3px;

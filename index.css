@@ -114,25 +114,57 @@ img{
     background-color: #000;
 } */
 
-#image1, #image2 {
+#apple1, #apple2, #bat1, #bat2, #cat1, #cat2,#dog1,#dog2, #ele1, #ele2, #fish1, #fish2, #grapes1, #grapes2, #hut1, #hut2,
+#ice1, #ice2, #jug1, #jug2, #kite1, #kite2, #lion1, #lion2, #moon1, #moon2, #nest1, #nest2, #orange1, #orange2, #parrot1, #parrot2,
+#queen1, #queen2, #rat1, #rat2, #sun1, #sun2, #truck1, #truck2, #umb1, #umb2, #van1, #van2, #watch1, #watch2, #xmas1, #xmas2,
+#yatch1, #yatch2, #zebra1, #zebra2 {
     display: none;
     position: fixed;
     top: 50%;
-    transform: translateY(-50%); /* Center vertically */
+    transform: translateY(-50%);
     z-index: 9999;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Shadow */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-#image1 {
-    left: 15%; /* Center-left */
-    width: 500px; /* Adjust as needed */
-    height: 500px;
+#apple1, #bat1, #cat1, #dog1, #ele1, #fish1, #grapes1, #hut1, #ice1, #jug1, #kite1, #lion1, #moon1, #nest1, #orange1, #parrot1, #queen1,
+#rat1, #sun1, #truck1, #umb1, #van1, #watch1, #xmas1, #yatch1, #zebra1{
+    left: 5%;
+    width: 600px; 
+    height: 600px;
     border-radius: 20%;
+    border: 10px solid black;
 }
 
-#image2 {
-    left: 55%; /* Center-right */
-    width: 500px; /* Adjust as needed */
-    height: 500px;
+#apple2, #bat2, #cat2, #dog2, #ele2, #fish2, #grapes2, #hut2, #ice2, #jug2, #kite2, #lion2, #moon2, #nest2, #orange2, #parrot2, #queen2,
+#rat2, #sun2, #truck2, #umb2, #van2, #watch2, #xmas2, #yatch2, #zebra2 {
+    left: 57%; 
+    width: 600px; 
+    height: 600px;
     border-radius: 20%;
+    border: 10px solid black;
 }
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0) translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(-50%);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1) translateY(-50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0) translateY(-50%);
+        opacity: 0;
+    }
+}
+

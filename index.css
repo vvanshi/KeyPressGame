@@ -113,3 +113,26 @@ img{
     width: 300px;
     background-color: #000;
 } */
+
+#image1, #image2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 9999;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Shadow */
+}
+
+#image1 {
+    left: 15%; /* Center-left */
+    width: 500px; /* Adjust as needed */
+    height: 500px;
+    border-radius: 20%;
+}
+
+#image2 {
+    left: 55%; /* Center-right */
+    width: 500px; /* Adjust as needed */
+    height: 500px;
+    border-radius: 20%;
+}
